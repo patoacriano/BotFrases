@@ -5,7 +5,9 @@
 
     $(document).ready(function(){
 		
-		var keyword = "";
+		var keywords = ["inspiring", "colorfull", "space","picnic","birds","urban"];
+		var nmr = Math.floor((Math.random() * keywords.length)+1);
+		var keyword = keywords[nmr];
         $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
         {
             tags: keyword,
@@ -22,9 +24,9 @@
         });
     });
 
-	var f1 = ["não ","sempre ","nunca ", "sim, ", "como diriam os sabios: ", " ", "como diria caue: ","para ter sucesso, ","ao acelerar, ","com um sorriso no rosto "];
-	var f2 = ["brinque com ", "jogue alguem no ", "leve seu amigo para ", "prometa que comprará um ", "coma feijão no ", "KALSKAKSADLKASK ", "tenha cuidado com ", "atenção ao fazer um ", "construa um ", "coma ", "ligue para ", "é tão bom boca na ", "visite um "];
-	var f3 = ["thiago","bola","carro","vulcão","mesa redonda", "sobrancelha", "jaca", "navio", "jumento", "medico", "restaurante", "Burger King", "capitalista", "capitalismo", "heliponto", "caue","uber","predio","martelo"];
+	var f1 = ["não ","sempre ","nunca ", "sim, ", "como diriam os sabios: ", " ", "como diria caue: ","para ter sucesso, ","ao acelerar, ","com um sorriso no rosto ","", "pense bem antes que voce ", "", ""];
+	var f2 = ["brinque com ", "jogue alguem no ", "leve seu amigo para ", "prometa que comprará um ", "coma feijão no ", "KALSKAKSADLKASK ", "tenha cuidado com ", "atenção ao fazer um ", "construa um ", "coma ", "ligue para ", "visite um ", "faça um ", "quebre um ", "beba um ", "retorne ao ", "converse com ", "responda para o ", "diga não ao ", "recuse frutas de ", "reutilize ", "passeie com ", "volte para ", "elimine ", "vista um ","recuse um ", "conte uma piada a ","se transforme em "];
+	var f3 = ["thiago","bola","carro","vulcão","mesa redonda", "sobrancelha", "jaca", "navio", "jumento", "medico", "restaurante", "Burger King", "capitalista", "capitalismo", "heliponto", "caue","uber","predio","martelo", "estacionamento", "avião de tripla helice", "iPad","celular","jantar romantico", "cachorro", "calice", "paulinho", "pedro"];
 	var n1 = Math.floor((Math.random() * f1.length) + 1);
 	var n2 = Math.floor((Math.random() * f2.length) + 1);
 	var n3 = Math.floor((Math.random() * f3.length) + 1);
