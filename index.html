@@ -36,14 +36,18 @@
 	var p2 = f2[n2];
 	var p3 = f3[n3];
 
-	if(p1 == "undefined")
-		p1 = "";
-	if(p2 == "undefined")
-		p2 = "";
-	if(p3 == "undefined")
-		p3 = "";
+	var pos = Math.floor((Math.random()*2));
 
-	var str = p1+p2+p3;
+	if(pos == 0)
+		var str = p1+p2+p3;
+	else{
+		var n2 = Math.floor((Math.random() * f2.length)  );
+		var n3 = Math.floor((Math.random() * f3.length)  );
+		str = p1+p2+p3;
+		p2 = f2[n2];
+		p3 = f3[n3];
+		str += " e "+p2+p3;
+	}
 
 	</script>
 	<style>
