@@ -1,0 +1,71 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script> 
+
+    $(document).ready(function(){
+		
+		var keyword = "";
+        $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+        {
+            tags: keyword,
+            tagmode: "any",
+            format: "json"
+        },
+        function(data) {
+            var rnd = Math.floor(Math.random() * data.items.length);
+
+            var image_src = data.items[rnd]['media']['m'].replace("_m", "_b");
+
+            $('body').css('background-image', "url('" + image_src + "')");
+
+        });
+    });
+
+	var f1 = ["não ","sempre ","nunca ", "sim, ", "como diriam os sabios: ", " ", "como diria caue: ","para ter sucesso, ","ao acelerar, ","com um sorriso no rosto "];
+	var f2 = ["brinque com ", "jogue alguem no ", "leve seu amigo para ", "prometa que comprará um ", "coma feijão no ", "KALSKAKSADLKASK ", "tenha cuidado com ", "atenção ao fazer um ", "construa um ", "coma ", "ligue para ", "é tão bom boca na ", "visite um "];
+	var f3 = ["thiago","bola","carro","vulcão","mesa redonda", "sobrancelha", "jaca", "navio", "jumento", "medico", "restaurante", "Burger King", "capitalista", "capitalismo", "heliponto", "caue","uber","predio","martelo"];
+	var n1 = Math.floor((Math.random() * f1.length) + 1);
+	var n2 = Math.floor((Math.random() * f2.length) + 1);
+	var n3 = Math.floor((Math.random() * f3.length) + 1);
+
+
+	var p1 = f1[n1];
+	var p2 = f2[n2];
+	var p3 = f3[n3];
+
+	var str = p1+p2+p3;
+
+
+
+	</script>
+	<style>
+		.centered {
+ 			 position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+			font-size:600%;
+			color: white;
+		  text-shadow: 6px 4px #000000;
+		}
+		.background-image{
+			position: center;
+		}
+		body{
+		  background-repeat: no-repeat;
+		  background-position: center;
+		  background-size:100% 100%;
+		}		
+		
+
+	</style>
+</head>
+<body>
+
+  <div class="centered" id="texto">Centered</div>
+	<script>
+
+	document.getElementById("texto").innerHTML = str;
+	</script>
+</body>
