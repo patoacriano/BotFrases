@@ -25,7 +25,7 @@
     });
 
 	var f1 = ["não ","sempre ","nunca ", "sim, ", "como diriam os sabios: ", " ", "como diria caue: ","para ter sucesso, ","ao acelerar, ","com um sorriso no rosto ","", "pense bem antes que voce ", "", "", "talvez voce ","", "eu prefiro que voce ", "","concordo, porem ", "", "","para ter mais sorte na vida ","", "boa noite, ", "bom dia, ", "se voce estiver em uma situação de emergencia ","","", "ao respirar ","", "imagine que voce ", "não fique para baixo, ","acima de tudo ","",""];
-	var f2 = ["brinque com ", "jogue alguem no ", "leve seu amigo para ", "prometa que comprará um ", "coma feijão no ", "KALSKAKSADLKASK ", "tenha cuidado com ", "tenha atenção ao fazer um ", "construa um ", "coma ", "ligue para ", "visite um ", "faça um ", "quebre um ", "beba um ", "retorne ao ", "converse com ", "responda para o ", "diga não ao ", "recuse frutas de ", "reutilize ", "passeie com ", "volte para ", "elimine ", "vista um ","recuse um ", "conte uma piada a ","se transforme em ", "cante com um ", "empreste um ", "escreva sobre ", "pule em cima de ", "faça transações comerciais com ", "coma um ", "dance com ", "pise em cima de ", "ria de ", "beba ", "enxugue ", "faça prova de ", "as vezes as dificuldades da vida são culpa apenas de ", "vista um ", "coloque um ","seja ", "considere ", "faça bullying com "];
+	var f2 = ["brinque com ", "jogue alguem no ", "leve seu amigo para ", "prometa que comprará um ", "coma feijão no ", "KALSKAKSADLKASK ", "tenha cuidado com ", "tenha atenção ao fazer um ", "construa um ", "coma ", "ligue para ", "visite um ", "faça um ", "quebre um ", "beba um ", "retorne ao ", "converse com ", "responda para o ", "diga não ao ", "recuse frutas de ", "reutilize ", "passeie com ", "volte para ", "elimine ", "vista um ","recuse um ", "conte uma piada a ","se transforme em ", "cante com um ", "empreste um ", "escreva sobre ", "pule em cima de ", "faça transações comerciais com ", "coma um ", "dance com ", "pise em cima de ", "ria de ", "beba ", "enxugue ", "faça prova de ", "as vezes as dificuldades da vida são culpa apenas de ", "vista um ", "coloque um ","seja ", "considere ", "faça bullying com ","aceite "];
 	var f3 = ["thiago","bola","carro","vulcão","mesa redonda", "sobrancelha", "jaca", "navio", "jumento", "medico", "restaurante", "Burger King", "capitalista", "capitalismo", "heliponto", "caue","uber","predio","martelo", "estacionamento", "avião de tripla helice", "iPad","celular","jantar romantico", "cachorro", "calice", "paulinho", "pedro", "tarcisio", "crise existencial", "jujuba","um pato", "Juan", "socialismo", "patinete", "bolsonaro", "Trombas", "estojo","microondas","macaco", "mamaco", "xavier"];
 	var n1 = Math.floor((Math.random() * f1.length)  );
 	var n2 = Math.floor((Math.random() * f2.length)  );
@@ -41,12 +41,16 @@
 	if(pos == 0)
 		var str = p1+p2+p3;
 	else{
+		var conects = [' e ', ', porem, ', ', entretanto, ',' e acima de tudo '];
+		var c = Math.floor((Math.random() * conects.length));
+		var conect = conects[c];
+
 		var n2 = Math.floor((Math.random() * f2.length)  );
 		var n3 = Math.floor((Math.random() * f3.length)  );
 		str = p1+p2+p3;
 		p2 = f2[n2];
 		p3 = f3[n3];
-		str += " e "+p2+p3;
+		str += conect+p2+p3;
 	}
 
 	</script>
