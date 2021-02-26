@@ -53,6 +53,7 @@
 		str += conect+p2+p3;
 	}
 
+
 	</script>
 	<style>
 		.centered {
@@ -82,5 +83,14 @@
 	<script>
 
 	document.getElementById("texto").innerHTML = str;
+	var texto = document.getElementById('texto');
+	
+	var font = Math.floor(Math.random() * 3);
+	if(font == 0)
+		texto.style.fontFamily = "monospace";
+	else if(font == 1)
+		texto.style.fontFamily = "cursive";
+	else if(font == 2)
+		texto.style.fontFamily = "sans-serif";
 	</script>
 </body>
