@@ -73,6 +73,14 @@
 		  background-position: center;
 		  background-size:100% 100%;
 		}		
+		@font-face{
+			font-family: lel;
+			src: url('akaya.ttf');
+		}
+		@font-face{
+			font-family: great;
+			src: url('great.ttf');
+		}
 		
 
 	</style>
@@ -87,9 +95,9 @@
 	
 	var font = Math.floor(Math.random() * 3);
 	if(font == 0)
-		texto.style.fontFamily = "monospace";
+		texto.style.fontFamily = "great";
 	else if(font == 1)
-		texto.style.fontFamily = "cursive";
+		texto.style.fontFamily = "lel";
 	else if(font == 2)
 		texto.style.fontFamily = "sans-serif";
 	</script>
