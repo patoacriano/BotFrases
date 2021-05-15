@@ -27,6 +27,41 @@ sinta-se à vontade pra adicionar coisa bizarra, coisa religiosa, coisa sobre a 
 
 caso você tenha uma ideia, porem n conseguiu pensar em como encaixar ela nos padrões (de beleza da sociedade moderna) das outras frases, não tem problema, alguem (ou eu, porem preguiça, então duvido um pouco disso) irá conseguir encaixar ela lá
 
+## Lista F1
 
+a lista f1 contem frases iniciais, como:
+
+- Bom dia,
+- Ao acordar,
+
+e frases do tipo
+
+## Lista F2
+
+essa lista contem mais coisas que alguem deve fazer, como verbos tipo
+
+- embale
+- corra de
+- lembre-se de dar um abraço em
+- No jantar romantico, conte uma historia de terro envolvendo 
+(eu tirei isso da minha cabeça, então é provavel que elas não estejam no programa)
+
+## Lista F3
+
+essa lista contem nome de pessoas, lugares, ou qualquer coisa que seja algo, tipo
+
+- fogao de 8 bocas
+- aviao de tripla helice
+- caue
+- cozinheiro
+- capitalismo
+- comunismo
+- lula bombado (preciso adicionar isso no programa)
+- giz de cera
+- renan
+
+é isso ai, pode ser literalmente qualquer coisa, seu personagem preferido, banda preferida, cantor preferido, desenho preferido, baralho preferido, pedra preferida, animal preferido e por ai vai
+
+## Conclusão
 
 ONOMATOPEIAS SÃO MENTIRAS!
